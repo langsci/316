@@ -121,7 +121,7 @@ Before we discuss some predictions of our proposal, it should be said that the n
 
 \section{Some predictions of the proposal}\label{hai-tri:sec:predictions}
 
-This section presents some intuitions about numerical statements which are predicted by our semantics for {\sc many}. The list is not intended to be exhaustive.%\vspace{-18pt}
+This section presents some intuitions about numerical statements which are predicted by our semantics for {\sc many}. The list is not intended to be exhaustive.
 
 \subsection{First prediction} We predict the observation made at the beginning of this chapter, namely that \REF{hai-tri:2.5-3} is neither contradictory nor equivalent to \REF{hai-tri:3-3}.
 
@@ -133,7 +133,7 @@ This section presents some intuitions about numerical statements which are predi
 \z
 \z
 
-\noindent This is because $\mu_{\eval{\texttt{novels}}{}}(x) \ge 2.5$ is neither contradictory nor equivalent to $\mu_{\eval{\texttt{novels}}{}}(x) \ge 3$. To see that $\mu_{\eval{\texttt{novels}}{}}(x) \ge 2.5$ is not contradictory, let $b$, $c$, and $d$ be, again, the three novels \textit{ Brothers Karamazov}, \textit{ Crime and Punishment}, and \textit{ Demons}, respectively, and let $d'$ be a subpart of \textit{ Demons} which measures one-half of this novel, so that $\mu_{\eval{\texttt{novels}}{}}(d') = \mu_d(d') = 0.5$. Then, $\mu_{\eval{\texttt{novels}}{}}(b\sqcup c \sqcup d') = \mu_{\eval{\texttt{novels}}{}}(c \sqcup d') + 1 = \mu_{\eval{\texttt{novels}}{}}(d') + 1 + 1 = \mu_{d}(d') + 1 + 1 = 0.5 + 1 + 1 = 2.5$. The non-equivalence follows from the logical truth that $2.5 < 3$ and the fact that there is an $x$ such that $\mu_{\eval{\texttt{novels}}{}}(x)=2.5$ (as shown above).%\vspace{-18pt}
+\noindent This is because $\mu_{\eval{\texttt{novels}}{}}(x) \ge 2.5$ is neither contradictory nor equivalent to $\mu_{\eval{\texttt{novels}}{}}(x) \ge 3$. To see that $\mu_{\eval{\texttt{novels}}{}}(x) \ge 2.5$ is not contradictory, let $b$, $c$, and $d$ be, again, the three novels \textit{ Brothers Karamazov}, \textit{ Crime and Punishment}, and \textit{ Demons}, respectively, and let $d'$ be a subpart of \textit{ Demons} which measures one-half of this novel, so that $\mu_{\eval{\texttt{novels}}{}}(d') = \mu_d(d') = 0.5$. Then, $\mu_{\eval{\texttt{novels}}{}}(b\sqcup c \sqcup d') = \mu_{\eval{\texttt{novels}}{}}(c \sqcup d') + 1 = \mu_{\eval{\texttt{novels}}{}}(d') + 1 + 1 = \mu_{d}(d') + 1 + 1 = 0.5 + 1 + 1 = 2.5$. The non-equivalence follows from the logical truth that $2.5 < 3$ and the fact that there is an $x$ such that $\mu_{\eval{\texttt{novels}}{}}(x)=2.5$ (as shown above).
 
 \subsection{Second prediction} \label{hai-tri:sec:pred2}
 
@@ -164,7 +164,7 @@ We predict that \REF{hai-tri:tautology} is a tautology.
 \label{hai-tri:tautology}
 \z
 
-\noindent Suppose John read a portion of $b$, call it $b'$, which measures three-fourths of $b$, so that $\mu_{\eval{\texttt{novels}}{}}(b') = \mu_b(b') = 0.75$.  Suppose, furthermore, that Mary read the rest of $b$, call it $b''$, which is all of that part of $b$ which John did not read. Then the antecedent is true. Now by hypothesis, $b' \sqcup b'' = b$, and $b \in \eval{\texttt{novels}}{}_{at}$. This means $\mu_b(b' \sqcup b'') = \mu_b(b) = 1$. Since $b'$ and $b''$ do not overlap, i.e. $b' \sqcap b'' = \emptyset$, we have $\mu_b(b' \sqcup b'') = \mu_b(b') + \mu_b(b'') = 1$. And because $\mu_b(b') = 0.75$, we have $\mu_b(b'') = 1 - 0.75 = 0.25$, hence $\mu_{\eval{\texttt{novels}}{}}(b'') = 0.25$, which means the consequent is true.%\vspace{-18pt}
+\noindent Suppose John read a portion of $b$, call it $b'$, which measures three-fourths of $b$, so that $\mu_{\eval{\texttt{novels}}{}}(b') = \mu_b(b') = 0.75$.  Suppose, furthermore, that Mary read the rest of $b$, call it $b''$, which is all of that part of $b$ which John did not read. Then the antecedent is true. Now by hypothesis, $b' \sqcup b'' = b$, and $b \in \eval{\texttt{novels}}{}_{at}$. This means $\mu_b(b' \sqcup b'') = \mu_b(b) = 1$. Since $b'$ and $b''$ do not overlap, i.e. $b' \sqcap b'' = \emptyset$, we have $\mu_b(b' \sqcup b'') = \mu_b(b') + \mu_b(b'') = 1$. And because $\mu_b(b') = 0.75$, we have $\mu_b(b'') = 1 - 0.75 = 0.25$, hence $\mu_{\eval{\texttt{novels}}{}}(b'') = 0.25$, which means the consequent is true.
 
 \subsection{Fourth prediction} 
 
@@ -174,7 +174,7 @@ We predict that \REF{hai-tri:notcontradiction} is not a contradiction.
 \label{hai-tri:notcontradiction}
 \z
 
-\noindent Suppose John read $b'$ which measures 0.5 of $b$, and Mary read $b''$ which measures 0.25 of $b$. Thus, $\mu_{b}(b') = 0.5$ and $\mu_{b}(b'') = 0.25$. The first conjunct is then true. Now let $b'$ and $b''$ overlap, so that $b' \sqcap b'' \neq \emptyset$. Furthermore, let $o$ be $b'\sqcap b''$ and $d'$ and $d''$ the non-overlapping parts of $b'$ and $b''$, respectively. Thus, $b'= d'\sqcup o$, $b''= d''\sqcup o$, and $b'\sqcup b''=d'\sqcup d''\sqcup o$. This means $\mu_{b}(b'\sqcup b'')=\mu_{b}(d'\sqcup d''\sqcup o)=\mu_{b}(d')+\mu_{b}(d'')+\mu_{b}(o)<\mu_{b}(d')+\mu_{b}(o)+\mu_{b}(d'')+\mu_{b}(o)=\mu_{b}(d'\sqcup o)+\mu_{b}(d''\sqcup o)=\mu_{b}(b')+\mu_{b}(b'')=0.5+0.25=0.75$, which means $\mu_{b}(b'\sqcup b'') < 0.75$, which hence means the second conjunct is true. %\vspace{-18pt}
+\noindent Suppose John read $b'$ which measures 0.5 of $b$, and Mary read $b''$ which measures 0.25 of $b$. Thus, $\mu_{b}(b') = 0.5$ and $\mu_{b}(b'') = 0.25$. The first conjunct is then true. Now let $b'$ and $b''$ overlap, so that $b' \sqcap b'' \neq \emptyset$. Furthermore, let $o$ be $b'\sqcap b''$ and $d'$ and $d''$ the non-overlapping parts of $b'$ and $b''$, respectively. Thus, $b'= d'\sqcup o$, $b''= d''\sqcup o$, and $b'\sqcup b''=d'\sqcup d''\sqcup o$. This means $\mu_{b}(b'\sqcup b'')=\mu_{b}(d'\sqcup d''\sqcup o)=\mu_{b}(d')+\mu_{b}(d'')+\mu_{b}(o)<\mu_{b}(d')+\mu_{b}(o)+\mu_{b}(d'')+\mu_{b}(o)=\mu_{b}(d'\sqcup o)+\mu_{b}(d''\sqcup o)=\mu_{b}(b')+\mu_{b}(b'')=0.5+0.25=0.75$, which means $\mu_{b}(b'\sqcup b'') < 0.75$, which hence means the second conjunct is true. 
 
 \subsection{Fifth prediction} \label{hai-tri:sec:pred5}
 
@@ -188,7 +188,7 @@ We predict that \REF{hai-tri:0.5novels} is coherent, but \REF{hai-tri:0.5quantit
 \z
 \z
 
-\noindent That \REF{hai-tri:0.5novels} is coherent is, by now, obvious. It will be true if John read, say, half of \textit{ Anna Karenina}. What makes \REF{hai-tri:0.5quantities} incoherent, then, must lie in the semantics of \textit{quantities of literature}, henceforth {\ttfamily qol} for short. According to the semantics we proposed for {\sc many}, \REF{hai-tri:0.5quantities} entails the existence of an individual $x$ such that $\mu_{\eval{\texttt{qol}}{}}(x) = 0.5$, which entails the existence of some $a \in \eval{\texttt{qol}}{}_{at}$ such that $x \sqsubseteq a$. Given that any subpart of a quantity of literature is itself a quantity of literature, we have $\eval{\texttt{qol}}{}_{at} = \{x \in \eval{\texttt{qol}}{} \mid \neg\exists y \sqsubset x \wedge y \in \eval{\texttt{qol}}{}\} = \emptyset$. Thus, there is no $a \in \eval{\texttt{qol}}{}_{at}$, which means there is no $x$ such that $\mu_{\eval{\texttt{qol}}{}}(x) = 0.5$, which means \REF{hai-tri:0.5quantities} is false. Furthermore, it is analytically false, which is to say false by virtue of the meaning of the word \textit{quantity}. This, we hypothesize, is the reason for its being perceived as deviant. We will come back to this point in the last section.%\vspace{-18pt}
+\noindent That \REF{hai-tri:0.5novels} is coherent is, by now, obvious. It will be true if John read, say, half of \textit{ Anna Karenina}. What makes \REF{hai-tri:0.5quantities} incoherent, then, must lie in the semantics of \textit{quantities of literature}, henceforth {\ttfamily qol} for short. According to the semantics we proposed for {\sc many}, \REF{hai-tri:0.5quantities} entails the existence of an individual $x$ such that $\mu_{\eval{\texttt{qol}}{}}(x) = 0.5$, which entails the existence of some $a \in \eval{\texttt{qol}}{}_{at}$ such that $x \sqsubseteq a$. Given that any subpart of a quantity of literature is itself a quantity of literature, we have $\eval{\texttt{qol}}{}_{at} = \{x \in \eval{\texttt{qol}}{} \mid \neg\exists y \sqsubset x \wedge y \in \eval{\texttt{qol}}{}\} = \emptyset$. Thus, there is no $a \in \eval{\texttt{qol}}{}_{at}$, which means there is no $x$ such that $\mu_{\eval{\texttt{qol}}{}}(x) = 0.5$, which means \REF{hai-tri:0.5quantities} is false. Furthermore, it is analytically false, which is to say false by virtue of the meaning of the word \textit{quantity}. This, we hypothesize, is the reason for its being perceived as deviant. We will come back to this point in the last section.
 
 \subsection{Sixth prediction} \label{hai-tri:sec:pred6}
 
@@ -208,7 +208,7 @@ $S :=$ $\mathbb{Q}^+ \backslash \{x \in \mathbb{Q} \mid 3 < x \leq 4\}$
 
 \noindent This is a dense scale, as between any two elements of $S$ there is an element of $S$. However, $S$ contains a gap: missing from it are numbers greater than 3 but not greater than 4, for example 3.5. Merely stipulating that the scale is dense, therefore, will not guarantee that \textit{John read 3.5 novels} is meaningful, which we claim is a robust intuition that linguistic theory has to account for.
 
-Note that \citet{foxhackl2006universal}, according to our understanding, seems to assume that density of a scale alone guarantees the absense of gaps in it. The authors claim, for example, that density guarantees that exhaustification of \textit{John has more than 3 children} would negate every element of $\{\texttt{John has more than n children} \mid \texttt{n} \in \mathbb{Q} \wedge \texttt{n} > 3\}$. We quote from page 543 of \citet{foxhackl2006universal}: ``Without the UDM [i.e. the assumption that the set of degrees is dense], [...] [t]he set of degrees relevant for evaluation would be, as is standardly assumed, possible cardinalities of children (i.e. 1, 2, 3, ...). The sentence would then assert that John doesn't have more than 4 children [...] If density is assumed, however, [...] the assertion would now not just exclude 4 as a degree exceeded by the number of John’s children. It would also exclude any degree between 3 and 4.'' Taken at face value, this claim is wrong, as is evident from the example in \REF{hai-tri:dense+gap}. %\vspace{-18pt}
+Note that \citet{foxhackl2006universal}, according to our understanding, seems to assume that density of a scale alone guarantees the absense of gaps in it. The authors claim, for example, that density guarantees that exhaustification of \textit{John has more than 3 children} would negate every element of $\{\texttt{John has more than n children} \mid \texttt{n} \in \mathbb{Q} \wedge \texttt{n} > 3\}$. We quote from page 543 of \citet{foxhackl2006universal}: ``Without the UDM [i.e. the assumption that the set of degrees is dense], [...] [t]he set of degrees relevant for evaluation would be, as is standardly assumed, possible cardinalities of children (i.e. 1, 2, 3, ...). The sentence would then assert that John doesn't have more than 4 children [...] If density is assumed, however, [...] the assertion would now not just exclude 4 as a degree exceeded by the number of John’s children. It would also exclude any degree between 3 and 4.'' Taken at face value, this claim is wrong, as is evident from the example in \REF{hai-tri:dense+gap}. 
 
 \subsection{Seventh prediction} 
 
@@ -281,7 +281,7 @@ For all $a \in A_{at}$, $\langle{\mathcal P}_a,\sqsubseteq\rangle$ is a $\sigma$
 
 \section{Open questions}
 
-We end with some open questions for future research. Again, the list below is not intended to be exhaustive. %\vspace{-18pt}
+We end with some open questions for future research. Again, the list below is not intended to be exhaustive. 
 
 \subsection{Concepts}  
 
@@ -299,7 +299,7 @@ The \textit{ Unvollendete} is 0.5 symphonies.
 \label{hai-tri:beethoven}
 \z
 
-\noindent Thus, while there certainly is a possible world $w$ in which \textit{ Crime and Punishment} is a subpart of a symphony, we want $w$ to be inaccessible from the world of evaluation. Plausibly, specifying the relevant accessibility relation in this particular case amounts to fleshing out the concept of `symphony', and specifying it in the general case, to fleshing out the concept of `concept'. We leave this task to future work. %\vspace{-18pt}
+\noindent Thus, while there certainly is a possible world $w$ in which \textit{ Crime and Punishment} is a subpart of a symphony, we want $w$ to be inaccessible from the world of evaluation. Plausibly, specifying the relevant accessibility relation in this particular case amounts to fleshing out the concept of `symphony', and specifying it in the general case, to fleshing out the concept of `concept'. We leave this task to future work. 
 
 \subsection{Analyticities} 
 
@@ -333,7 +333,7 @@ Suppose John read one quarter of \textit{ Brothers Karamazov} and one quarter of
 \z
 \z
 
-\noindent \citet{gajewski2003analyticity} proposes that the kind of analyticity which leads to deviance is `L-analyticity'. Thus, while \REF{hai-tri:bachelors} is analytically false, \REF{hai-tri:exceptive} is L-analytically false, and therefore is deviant. Discussing Gajewski's notion of L-analyticity will take us beyond the scope of this chapter. Hence, we will leave to future research the question whether, and if yes how, sentences such as \REF{hai-tri:rep0.5quantities} can be considered L-analytical.%\vspace{-18pt}
+\noindent \citet{gajewski2003analyticity} proposes that the kind of analyticity which leads to deviance is `L-analyticity'. Thus, while \REF{hai-tri:bachelors} is analytically false, \REF{hai-tri:exceptive} is L-analytically false, and therefore is deviant. Discussing Gajewski's notion of L-analyticity will take us beyond the scope of this chapter. Hence, we will leave to future research the question whether, and if yes how, sentences such as \REF{hai-tri:rep0.5quantities} can be considered L-analytical.
 
 \subsection{Countabilities} \label{hai-tri:sec:countabilities}
 
@@ -372,7 +372,7 @@ It should be noted, in addition, that words like \textit{quantity} may pose a ch
 \z
 \z
 
-\noindent from the assumption that the scale mates of \textit{2}, for the deductive system (DS) which computes scalar implicatures, are not the set of natural numbers, but the set of rational numbers. The proposal, therefore, claims that \REF{hai-tri:2.3} is a scalar alternative of \REF{hai-tri:morethan2} (see \sectref{hai-tri:sec:pred6}). To the extent that the deviance of \REF{hai-tri:2.3} is due to this sentence being deemed ill-formed by the DS itself (see \citealt{gajewski2003analyticity, foxhackl2006universal}, and the discussion in the previous subsection), the question arises as to whether DS uses a sentence which it deems ill-formed in its computation. Again, we leave this topic to future work. %\vspace{-18pt} 
+\noindent from the assumption that the scale mates of \textit{2}, for the deductive system (DS) which computes scalar implicatures, are not the set of natural numbers, but the set of rational numbers. The proposal, therefore, claims that \REF{hai-tri:2.3} is a scalar alternative of \REF{hai-tri:morethan2} (see \sectref{hai-tri:sec:pred6}). To the extent that the deviance of \REF{hai-tri:2.3} is due to this sentence being deemed ill-formed by the DS itself (see \citealt{gajewski2003analyticity, foxhackl2006universal}, and the discussion in the previous subsection), the question arises as to whether DS uses a sentence which it deems ill-formed in its computation. Again, we leave this topic to future work.  
 
 \subsection{Morphology} 
 
@@ -386,7 +386,7 @@ The plural vs. singular distinction in number marking languages has usually been
 \z
 \z
 
-\noindent We know of no account for this fact, and leave an investigation of it for future research. %\vspace{-18pt}
+\noindent We know of no account for this fact, and leave an investigation of it for future research. 
 
 \subsection{Reals}\label{hai-tri:sec:reals}
 
