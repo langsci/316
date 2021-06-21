@@ -38,6 +38,7 @@
 % \newcommand{\sem}[1]{\ensuremath{\llbracket#1\rrbracket}}
 
 \begin{document}
+\SetupAffiliations{mark style=none}
 \maketitle
 
 % The part below is from the generic LangSci Press template for papers in edited volumes. Delete it when you're ready to go.
@@ -100,18 +101,7 @@ While our data set contains a large number of occurrences for each noun consider
 % for plural forms or occurrence with a numeric modifier to check for any countable examples not captured in our source corpus. 
 We collected a number of example sentences demonstrating each type of countability coercion observed with a given noun. Table \ref{gri-ric:tab:coercion} lists the different countable uses, which we will refer to as \textsc{coercion types}, observed of the 482 nouns in the data set and provides the number of nouns observed for each coercion type. While no countable examples were found for 262 of the nouns, the remaining nouns had examples that could be attributed to one or more coercion types.\footnote{Note that as some nouns were found to have more than one type from multiple example sentences, the ``Number of nouns observed'' column does not sum to 482.}
 
-
-The coercion types were determined by the authors and a research assistant who separately annotated the collected examples.\footnote{This was carried out on a portion of the data for Jargon and Archaic had already been excluded.} They discussed the annotations and agreed upon a final set of labels on a small training portion of the data (150 example sentences). Then two of this group served as annotators independently annotated the remaining 377 example sentences and compared their annotations.  Inter-annotator agreement was `moderate' (Cohen's $\kappa$ = 0.56) when calculated on the entire test dataset (527 sentences). Agreement was even higher on two subsets of the data.   One subset excluded even more archaic or jargon uses and the inter-annotator agreement was `substantial' (Cohen's $\kappa$ = 0.65), and similarly for a different subset which excluded a specific error pattern from one of the annotators who over-labeled with the Packaging coercion type (Cohen's $\kappa$ = 0.66).\footnote{See full data set at \url{https://quantitativesemanticslab.github.io/}.}
-
-
-
-
-Since the theoretical understanding of different types of coercions possible -- beyond the familiar contexts discussed in the literature under ``packaging'' and ``grinder''  -- is still limited, despite a growing literature which describes some of the lesser-studied countability shifts \citep{Huddleston2002,grimm2014individuating,Husic2020,ZamparelliToAppear},   we now detail with examples the different coercion types we observed for these nouns.
-
-
-
-\begin{table}[]
-    \centering
+\begin{table}
     \begin{tabular}{lr}
     \lsptoprule
         Coercion type    &  Number of nouns observed \\ 
@@ -129,12 +119,18 @@ Since the theoretical understanding of different types of coercions possible -- 
   No countable uses observed & 137 \\
   \lspbottomrule
 \end{tabular}
-    \caption{Types of Countable Uses of Non-Countable Nouns}
-    \label{gri-ric:tab:coercion}
+    \caption{Types of countable uses of non-countable nouns\label{gri-ric:tab:coercion}}
 \end{table}
 
 
-\paragraph*{Entity Type} These count uses refer to multiple classifications, compositions, severities, etc.\ of the entity designated by the lexicon. As a heuristic diagnostic, \emph{type of} or a similar phrase may be felicitously added to clarify the contrast evoked.
+The coercion types were determined by the authors and a research assistant who separately annotated the collected examples.\footnote{This was carried out on a portion of the data for Jargon and Archaic had already been excluded.} They discussed the annotations and agreed upon a final set of labels on a small training portion of the data (150 example sentences). Then two of this group served as annotators independently annotated the remaining 377 example sentences and compared their annotations.  Inter-annotator agreement was `moderate' (Cohen's $\kappa$ = 0.56) when calculated on the entire test dataset (527 sentences). Agreement was even higher on two subsets of the data.   One subset excluded even more archaic or jargon uses and the inter-annotator agreement was `substantial' (Cohen's $\kappa$ = 0.65), and similarly for a different subset which excluded a specific error pattern from one of the annotators who over-labeled with the Packaging coercion type (Cohen's $\kappa$ = 0.66).\footnote{See full data set at \url{https://quantitativesemanticslab.github.io/}.}
+
+
+Since the theoretical understanding of different types of coercions possible -- beyond the familiar contexts discussed in the literature under ``packaging'' and ``grinder''  -- is still limited, despite a growing literature which describes some of the lesser-studied countability shifts \citep{Huddleston2002,grimm2014individuating,Husic2020,ZamparelliToAppear},   we now detail with examples the different coercion types we observed for these nouns.
+
+
+\begin{description}
+\item[Entity Type:] These count uses refer to multiple classifications, compositions, severities, etc.\ of the entity designated by the lexicon. As a heuristic diagnostic, \emph{type of} or a similar phrase may be felicitously added to clarify the contrast evoked.
 \eanoraggedright \label{gri-ric:ex:twines}
 \textbf{Twines} can differ by their material and strength, which changes how they should be used. Some \textbf{twines} are ideal for cooking since they can withstand heat and don’t impart flavor onto your food, while other \textbf{twines} are perfect for decoration or more heavy-duty use.\footnote{\url{https://www.webstaurantstore.com/guide/880/types-of-twine.html}} \z
 
@@ -142,7 +138,7 @@ Since the theoretical understanding of different types of coercions possible -- 
 
 
 
-\paragraph*{Event} These count uses refer to multiple occurrences or iterations of the event designated by the noun. If the events \textit{are not} simultaneous, ordinal numerals or lexical items denoting temporal location may stand in to distinguish the events, as in  \REF{gri-ric:ex:automations}. %\todo{Can you explain/exemplify this?}
+\item[Event:] These count uses refer to multiple occurrences or iterations of the event designated by the noun. If the events \textit{are not} simultaneous, ordinal numerals or lexical items denoting temporal location may stand in to distinguish the events, as in  \REF{gri-ric:ex:automations}. %\todo{Can you explain/exemplify this?}
 If the events \textit{are} simultaneous, other modifiers such as locations may be used to distinguish the events, as in \REF{gri-ric:ex:minings}.
 \eanoraggedright \label{gri-ric:ex:automations}
 The \textbf{automations} are not necessarily run at the top of the hour, and it may not be exactly one hour between executions of an automation.\\\null\hfill (Google Books) 
@@ -155,25 +151,25 @@ Most important of the \textbf{minings} were those of the Gotthard and Simplon tu
 \z
 
 
-\paragraph*{Possessor} These count uses make reference to distinct agents displaying the property, often implicitly.
+\item[Possessor:] These count uses make reference to distinct agents displaying the property, often implicitly.
 
 \eanoraggedright \label{gri-ric:ex:sobrieties} The management team understands how individualized the recovery process is and that no two \textbf{sobrieties} look the same.\footnote{\url{https://m.yelp.ca/biz/the-district-recovery-community-huntington-beach}} \z
 
 
-\paragraph*{Relational} These count uses  arise from distinguishing multiple types in terms of their relation to, e.g., other event participants.  In example \REF{gri-ric:ex:contentments}, different types of \textit{contentment} are established with respect to the different things with which one may be content, i.e., different stimuli.
+\item[Relational:] These count uses  arise from distinguishing multiple types in terms of their relation to, e.g., other event participants.  In example \REF{gri-ric:ex:contentments}, different types of \textit{contentment} are established with respect to the different things with which one may be content, i.e., different stimuli.
 
 %\ea  \label{gri-ric:ex:bondage} Some of these \textbf{bondages} may include immorality, hatred, and envy. (Google Books)\z
 
 \eanoraggedright \label{gri-ric:ex:contentments} Those \textbf{contentments} have come to include housing, healthcare, schooling and employment as well as freedom from intimidation.\footnote{\url{https://reader.exacteditions.com/issues/59737/page/10}} \z
 
-\paragraph*{Event Type} While countable Event uses refer to multiple, specific occurrences of the event designated by the noun, Event Type uses do not refer to specific events, but more abstractly, contrasting different types of the event in question.
+\item[Event Type:] While countable Event uses refer to multiple, specific occurrences of the event designated by the noun, Event Type uses do not refer to specific events, but more abstractly, contrasting different types of the event in question.
 
 
 \eanoraggedright \label{gri-ric:ex:violences} Again, this is not to hold equivalence between either the types of violence or particular \textbf{violences} in each category. \hfill (Google Books)\z
 
 
 
-\paragraph*{Packaging}  These count uses  evoke a bundling or containment of the noun's referent as a single unit, often assuming a standard measure or container. %Packaging uses may have a lexical item inserted to describe the bundling.
+\item[Packaging:]  These count uses  evoke a bundling or containment of the noun's referent as a single unit, often assuming a standard measure or container. %Packaging uses may have a lexical item inserted to describe the bundling.
 
 \eanoraggedright \label{gri-ric:ex:buttermilks}
 Six quarts of milk, two \textbf{buttermilks}, two chocolates, and three pints of cream. \hfill (Google Books)
@@ -181,19 +177,19 @@ Six quarts of milk, two \textbf{buttermilks}, two chocolates, and three pints of
 \z
 
 
-\paragraph*{Value} These count uses refer to varying levels or numerical values of a scale associated, perhaps implicitly, with the noun. This use differs from Entity Type coercions as this relies on a value or degree. Explicit values may be added to distinguish between the singular units.
+\item[Value:] These count uses refer to varying levels or numerical values of a scale associated, perhaps implicitly, with the noun. This use differs from Entity Type coercions as this relies on a value or degree. Explicit values may be added to distinguish between the singular units.
 
 \eanoraggedright \label{gri-ric:ex:latitudes} Low \textbf{latitudes} are those locations found between the Equator (0 degrees N/S) and 30 degrees N/S. The middle \textbf{latitudes} are found between 30 degrees N/S and 60 degrees N/S. And the high \textbf{latitudes} are found between 60 degrees N/S and the poles (90 degrees N/S). \footnote{\url{https://www.shsu.edu/~dl_www/bkonline/131online/f02latitude/02index.htm}} \z
 
 \eanoraggedright \label{gri-ric:ex:moistures} Barley was germinated in soils of two \textbf{moistures} (40 and 50 per cent). \hfill (Google Books) \z
 
 
-\paragraph*{Modificational} These count uses are of (typically) adjectives, where the head noun is absent and the modifier or distinguishing property is actually what bears the plural morphology.
+\item[Modificational:] These count uses are of (typically) adjectives, where the head noun is absent and the modifier or distinguishing property is actually what bears the plural morphology.
 
 \eanoraggedright \label{gri-ric:ex:vanillas} If there really were 6 vanilla and 6 peanut butter candies in the box, what is the probability that you would have picked three \textbf{vanillas} in a row?\footnote{\url{https://www.slader.com/discussion/question/someone-hands-you-a-box-of-a-dozen-chocolate-covered-candies-telling-you-that-half-are-vanilla-cre-2/}} \z
 
 
-\paragraph*{Jargon} These are count uses that  occur only within specific contexts, primarily technical jargon. The example in \REF{gri-ric:ex:oxygens} is a commonly found example of jargon occurring in chemistry and physics contexts that describe atoms and molecules.
+\item[Jargon:] These are count uses that  occur only within specific contexts, primarily technical jargon. The example in \REF{gri-ric:ex:oxygens} is a commonly found example of jargon occurring in chemistry and physics contexts that describe atoms and molecules.
 
 \eanoraggedright \label{gri-ric:ex:oxygens}
 However, at the oxygens bridging two \textbf{aluminums}, oxygens were swapped only about once every 13 hours.\footnote{\url{https://www.ucdavis.edu/news/oxygen-swapping-offers-clues-toxics-management/}}
@@ -204,16 +200,16 @@ However, at the oxygens bridging two \textbf{aluminums}, oxygens were swapped on
 %\z
 
 
-\paragraph*{Archaic} These count uses occur only in poetic uses or examples predating 1880, and current countable uses are not found outside of these contexts. 
+\item[Archaic:] These count uses occur only in poetic uses or examples predating 1880, and current countable uses are not found outside of these contexts. 
 \eanoraggedright 
 The capytle doth shew of the \textbf{fortitudes} of the planetes.\hfill (Google Books)
 %\url{https://books.google.com/books?id=DQZVAAAAcAAJ&pg=PA23&lpg=PA23&dq=%22the+fortitudes%22&source=bl&ots=RIiqLE8V2C&sig=ACfU3U0g6dzYeLUVMCMQJATS4xLaKmjlIQ&hl=en&sa=X&ved=2ahUKEwiNp8ff6JrqAhWUG80KHaU3BGoQ6AEwD3oECAsQAQ#v=onepage&q=%22the%20fortitudes%22&f=false}
 \z
 
 
-\paragraph*{No countable uses observed}  These nouns had no occurrences of count uses. 
+\item[No countable uses observed:]  These nouns had no occurrences of count uses. 
 
-\bigskip
+\end{description}
 
 
 
@@ -310,7 +306,7 @@ These proposed categories can also often be distinguished via contrasting gramma
 
 
 
-\paragraph*{Entities} The Entities super-category includes some representatives of ``classic'' non-countable noun types, such as \textsc{substances} (\textit{dirt}), \textsc{materials} (\textit{asphalt, hemp, latex}), \textsc{grains and flours} (\textit{bran,
+\subsubsection{Entities} The Entities super-category includes some representatives of ``classic'' non-countable noun types, such as \textsc{substances} (\textit{dirt}), \textsc{materials} (\textit{asphalt, hemp, latex}), \textsc{grains and flours} (\textit{bran,
 cornstarch, flax}), and  \textsc{liquids} (\textit{booze, kerosene, oil}).  Although these notional categories are the most typical ones used to exemplify non-countable nouns (e.g.\ \textit{water}, a liquid) in our data, these categories are somewhat sparsely populated compared to the number of other categories (e.g., mental state nouns).  No doubt this results from the high number of nouns in these categories which are ``dual-life'' nouns, that is, nouns which also manifest a countable use and thus were excluded from our set of strongly non-countable nouns. At the same time, other instances of liquids and substances do arise, namely those that have been processed or manufactured, falling under the  categories of \textsc{chemicals \& elements} and \textsc{drugs}.   
 
 Better represented are \textsc{aggregate} nouns, for which nearly all the examples from the literature are found in our data set (\textit{footwear, furniture,  luggage, silverware}) along with nouns which have some claim to ``aggregate'' status, even if most likely possessing some different characteristics than \textit{furniture}, such as  \textit{bedding}, \textit{homework}, \textit{merchandise}, \textit{paperwork}, \textit{parking}, \textit{traffic}, \textit{weaponry},  and \textit{wildlife}.  Thus, our methodology is able to replicate the observation made at several points in the literature that aggregate nouns like \textit{furniture} are less flexible and therefore more strongly non-countable than typical substance or liquid nouns.%**CITE**
@@ -335,7 +331,7 @@ Food terms such as \textit{chicken} are well-known as ``dual-life'' nouns, but t
 
 In sum, the now-common notional contrast between individual, aggregate and substance nouns is not sufficient to explain the variety of types of non-countable nouns observed even in the domain of physical entities: Evaluativity, interaction/use, and lexical contrast all may play a role in why a given noun may be (non-)countable.
 
-\paragraph*{Eventualities} The Eventualities super-category contains nominal forms designating various events, activities, processes or states.  As one might expect from previous work linking countability and aktionsart (see \citealt{Mourelatos1978, grimm2014individuating} and references therein), the non-countable nouns in this category are imbalanced among types of eventualities. More nouns refer to activities, processes or states than to events and, further, the strongly non-countable nouns that do refer to events have very particular semantics.
+\subsubsection{Eventualities} The Eventualities super-category contains nominal forms designating various events, activities, processes or states.  As one might expect from previous work linking countability and aktionsart (see \citealt{Mourelatos1978, grimm2014individuating} and references therein), the non-countable nouns in this category are imbalanced among types of eventualities. More nouns refer to activities, processes or states than to events and, further, the strongly non-countable nouns that do refer to events have very particular semantics.
 
 \textsc{multi-participant events} enforce  reference to multiple individuals or events, thus \textit{applause} normally comprises clapping from more than one member of an audience, and \textit{bloodshed} is used to describe the killing or wounding of multiple people.\footnote{Some lexicographical resources note the multiple-participant facet of \textit{bloodshed}'s meaning, as in the definition from the Oxford lexicography website \url{lexico.com}: ``The killing or wounding of people, typically on a large scale during a conflict.''}  Similarly, \textit{centralization} requires bringing multiple elements together  while  
 \textit{dissemination} requires distributing multiple elements in multiple locations.  The intrinsic plurality in these nominal descriptions most likely inhibits the use of a plural form.\footnote{An anonymous reviewer suggests that this class could constitute a morphologically singular counterpart to pluralia tantum nouns like \textit{scissors} or \textit{entrails}, which have been argued to be lexically plural \citep{Acquaviva2008}, differing in that the lexical plurality is not overtly marked.}
@@ -360,7 +356,7 @@ The remaining categories in the Eventuality super-category are the more expected
 %What types of nouns are there?\\
 %-Discuss intuitive classification
 
-\paragraph*{Phenomena} These nouns lack reference to any specific temporal or spatial location, the vagueness and unbounded nature of which is most likely the cause of their non-countability. For instance, \textsc{diseases} includes nouns which have meanings charged with  physical and temporal aspects, e.g., \textit{smallpox} or \textit{tuberculosis} have physical causes and manifestations, but these are not the same as nouns which describe a (potentially) bounded physical entity, like \textit{table}.   Similar observations apply to  \textsc{disorders}, such as \textit{autism} or \textit{vertigo}, which are related to events, but cannot be reduced to particular events or states, as well as to \textsc{natural forces}, such as \textit{magnetism} or \textit{sunshine}.  
+\subsubsection{Phenomena} These nouns lack reference to any specific temporal or spatial location, the vagueness and unbounded nature of which is most likely the cause of their non-countability. For instance, \textsc{diseases} includes nouns which have meanings charged with  physical and temporal aspects, e.g., \textit{smallpox} or \textit{tuberculosis} have physical causes and manifestations, but these are not the same as nouns which describe a (potentially) bounded physical entity, like \textit{table}.   Similar observations apply to  \textsc{disorders}, such as \textit{autism} or \textit{vertigo}, which are related to events, but cannot be reduced to particular events or states, as well as to \textsc{natural forces}, such as \textit{magnetism} or \textit{sunshine}.  
 
 
 %Contrast with aggregates and liquids, which both can be quantified, or in the case of aggregates, unitized, this doesn't seem possible. grain of rice, bowl of rice, cup of water, bottle of oil, etc.
@@ -372,12 +368,12 @@ The remaining categories in the Eventuality super-category are the more expected
 
 
 
-\paragraph*{Abstract} The nouns in \textsc{Abstract} are those which are not necessarily interpreted as connected to spatial or temporal dimensions.  \textsc{domains of knowledge} (\textit{forestry}, \textit{psychoanalysis}, \textit{voodoo}) or \textsc{Social ideas}  (\textit{federalism}, \textit{materialism}) describe bodies of knowledge, ideas or cultural practices which are not embodied by one particular act or event.  Qualities, both \textsc{human qualities} (\textit{chastity}, \textit{foolishness}) and \textsc{general qualities} (\textit{health}, \textit{toughness}), may be exemplified by acts or events, but are not co-extensional with those events.  That is, the meaning of \textit{chastity} or \textit{foolishness} is not equivalent to the set of chaste or foolish acts.  Nouns which designate relations are found in this class, too.  These are distinct from nouns most often discussed under ``relational nouns'' such as \textit{brother} or \textit{neighbor}, which designate an entity in terms of the relation it stands in with respect to another entity.  The nouns, whether in the \textsc{symmetric relations} (\textit{accordance}, \textit{relatedness}) or \textsc{asymmetric relations} (\textit{governance}, \textit{subordination}) category, designate the relation itself.  
+\subsubsection{Abstract} The nouns in \textsc{Abstract} are those which are not necessarily interpreted as connected to spatial or temporal dimensions.  \textsc{domains of knowledge} (\textit{forestry}, \textit{psychoanalysis}, \textit{voodoo}) or \textsc{Social ideas}  (\textit{federalism}, \textit{materialism}) describe bodies of knowledge, ideas or cultural practices which are not embodied by one particular act or event.  Qualities, both \textsc{human qualities} (\textit{chastity}, \textit{foolishness}) and \textsc{general qualities} (\textit{health}, \textit{toughness}), may be exemplified by acts or events, but are not co-extensional with those events.  That is, the meaning of \textit{chastity} or \textit{foolishness} is not equivalent to the set of chaste or foolish acts.  Nouns which designate relations are found in this class, too.  These are distinct from nouns most often discussed under ``relational nouns'' such as \textit{brother} or \textit{neighbor}, which designate an entity in terms of the relation it stands in with respect to another entity.  The nouns, whether in the \textsc{symmetric relations} (\textit{accordance}, \textit{relatedness}) or \textsc{asymmetric relations} (\textit{governance}, \textit{subordination}) category, designate the relation itself.  
 
 The nouns in the category of \textsc{location/time} describe or reference some aspect of spatial or temporal experience, as in \textit{horseback},  \textit{midair}, or \textit{sundown}, but again cannot be reduced to a specific location or event.  The category of \textsc{sports} too shares the aspect of at once having physical and temporal aspects while also transcending them.  
 
 
-\paragraph*{Unclassified}  The inclusion of this category  reinforces a point made at the beginning of this section, that this classification is incomplete and many unresolved issues remain.  This varied group  includes nouns such as \textit{postage}, \textit{slang}, \textit{eyesight}, and \textit{firepower}, which fit poorly in any of the categories discussed so far.  No doubt a larger sample would help to establish even more fine-grained categories in which these nouns could be located.  Some interesting cases are still worth pointing out.  
+\subsubsection{Unclassified}  The inclusion of this category  reinforces a point made at the beginning of this section, that this classification is incomplete and many unresolved issues remain.  This varied group  includes nouns such as \textit{postage}, \textit{slang}, \textit{eyesight}, and \textit{firepower}, which fit poorly in any of the categories discussed so far.  No doubt a larger sample would help to establish even more fine-grained categories in which these nouns could be located.  Some interesting cases are still worth pointing out.  
 
 \textit{Manslaughter} appears to be rigidly non-countable, which is odd if one takes it to be analogous to, for instance, \textit{murder}; however, the observed uses of \textit{manslaughter} do not appear to be directly referencing acts or events, but rather offer a classification of acts or events as falling under manslaughter or not -- that is, the noun provides a second-order property, a property of properties. In a similar vein, the nouns \textit{conduct} or \textit{haste} do not refer an event itself, but serve as a secondary predication over an event, referring to the manner in which an event or set of events was carried out.
 
