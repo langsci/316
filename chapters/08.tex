@@ -53,7 +53,7 @@ According to \citeauthor{landman1989groupsi} (\citeyear{landman1989groupsi,landm
 \begin{figure}[h]
 \RawFloats
 \centering
-\begin{minipage}[b]{0.49\textwidth}
+\begin{minipage}[b]{0.5\textwidth}
 \centering
 \begin{tikzpicture}
 \draw (-0.1,0.02) -- (2.3,0.02);
@@ -78,8 +78,8 @@ According to \citeauthor{landman1989groupsi} (\citeyear{landman1989groupsi,landm
 \end{tikzpicture}
 \caption{Distributive reading of \REF{wan:ex:modes-body}}
 \label{wan:fig:body-distributive}
-\end{minipage}
-\begin{minipage}[b]{0.49\textwidth}
+\end{minipage}%
+\begin{minipage}[b]{0.5\textwidth}
 \centering
 \begin{tikzpicture}
 \draw (-0.2,0.02) -- (1.3,0.02);
@@ -148,15 +148,13 @@ Though \citeauthor{landman2000events}'s distinctions are very useful and instruc
 While \citeauthor{landman2000events}'s collective body formation, recall \REF{wan:ex:modes-body}, is a clear case of the spatial mode, collective responsibility, recall \REF{wan:ex:modes-responsibility}, certainly involves being part of some social entity independent of the position of its members. On the other hand, the cases of collective action exemplified in \REF{wan:ex:modes-action} can relate to either the spatial or the social mode of collectivity, depending on a particular situation.\footnote{Though \REF{wan:ex:modes-action} seems to neatly fit the spatial mode of collectivity, one can easily imagine actions that require the coordination of multiple activities performed at different times and locations: 
 
 \ea The personnel launched the space shuttle.\label{wan:ex:shuttle}
-\z
-
-}
+\z}
 
 \section{Types of collectives}\label{wan:sec:types-of-collectives}
 
 Differentiating between two independent modes of collectivity is an important insight not only from the perspective of general conceptual considerations. It turns out that natural language appears to be sensitive to the different ways a group can be construed. In particular, there is a growing body of evidence demonstrating that in fact there are (at least) two types of collective nouns, namely (i)~\textsc{social collectives} designating organizations constituted by their members, e.g., \textit{committee (of women)}, \textit{team (of players)} and \textit{gang (of counterfeits)}, and (ii)~\textsc{spatial collectives} referring to topological configurations of objects, e.g., \textit{bunch (of flowers)}, \textit{pile (of dishes)} and \textit{crowd (of people)} \citep{pearson2011new,de_vries2015shifting,henderson2017swarms,zwarts2020contiguity}.\footnote{Notice that different terms have been used to describe the distinction, e.g., \citeauthor{pearson2011new} differentiates between committee and collection nouns, \citeauthor{henderson2017swarms} distinguishes between group and swarm nouns, whereas \citeauthor{zwarts2020contiguity} talks about club and crowd nouns. However, since the expressions designated by these labels encode also (in)animacy (see below), I will use the more general terms social and spatial collectives instead.}
 
-A number of diagnostics to distinguish the two types of collective nouns have been proposed in the literature, e.g, (i)~plural agreement in British and Canadian English, (ii)~ability to antecede plural pronouns, (iii)~embedding in partitive constructions, (iv)~quantificational domain of \textit{half}, (v)~reference to larger cardinalities, (vi)~truth conditions of negated existential statements, (vii)~compatibility with spatial modifiers and (viii)~compatibility with certain expressions such as the Dutch noun \textit{lid} `member'. Nevertheless, only (v)--(viii) turn out to be reliable diagnostics. In order to show that, let us look more closely at each of them.\footnote{I would like to thank Kurt Erbach and Peter Sutton for their judgments concerning American and British English, respectively, as well as for the discussion of the data to be reported below.}
+A number of diagnostics to distinguish the two types of collective nouns have been proposed in the literature, e.g, (i)~plural agreement in British and Canadian English, (ii)~ability to antecede plural pronouns, (iii)~embedding in partitive constructions, (iv)~quantificational domain of \textit{half}, (v)~reference to larger cardinalities, (vi)~truth conditions of negated existential statements, (vii)~compatibility with spatial modifiers and (viii)~compatibility with certain expressions such as the Dutch noun \textit{lid} `member'. Nevertheless, only (v--viii) turn out to be reliable diagnostics. In order to show that, let us look more closely at each of them.\footnote{I would like to thank Kurt Erbach and Peter Sutton for their judgments concerning American and British English, respectively, as well as for the discussion of the data to be reported below.}
 
 \subsection{Flawed diagnostics}\label{wan:sec:flawed-diagnostics}
 
@@ -219,7 +217,7 @@ It has been observed that in British and Canadian English nouns such as \textit{
 
 \noindent As recognized by \citet{henderson2017swarms}, referents of spatial collectives must be constituted by a sufficiently large number of entities. On the other hand, referents of social collective nouns need not, as witnessed by the contrast in \REF{wan:ex:plurality}.
 	
-	\ea\label{wan:ex:plurality} 
+	\ea\judgewidth{\#}\label{wan:ex:plurality} 
 		\ea[]{Bill needs to learn to cook for a family of two.}\label{wan:ex:plurality-family} 
 		\ex[\#]{John planted a grove of two redbud trees. \hfill \citep[167]{henderson2017swarms}}\label{wan:ex:plurality-grove}
     \z	
@@ -232,13 +230,11 @@ It has been observed that in British and Canadian English nouns such as \textit{
 
 \noindent Another important observation by \citeauthor{henderson2017swarms} is that individuals designated by spatial collectives must occupy the same region of space. Consider, for instance, the spatial entailments in \REF{wan:ex:entailment-committee} and \REF{wan:ex:entailment-bouquet}. While social collectives are insensitive to the locations of their constituent members, spatial collections may cease to exist if the topological configuration of the entities that make them up is rearranged.
 	
-	\ea\label{wan:ex:entailment-committee} 
+	\ea\judgewidth{$\nvDash$}\label{wan:ex:entailment-committee} 
 		\ea[]{Each member of the committee travels to a different state to visit family.}\label{wan:ex:entailment-committee1} 
 		\ex[$\nvDash$]{The committee no longer exists. \hfill \citep[168]{henderson2017swarms}}\label{wan:ex:entailment-committee2} 
 	\z	
-	\z
-
-    \ea\label{wan:ex:entailment-bouquet}		
+	\ex\judgewidth{$\vDash$}\label{wan:ex:entailment-bouquet}		
 		\ea[]{Someone takes each flower from the bouquet and places it in a different room of the house.}\label{wan:ex:entailment-bouquet1} 
 		\ex[$\vDash$]{The bouquet no longer exists. \hfill \citep[168]{henderson2017swarms}}\label{wan:ex:entailment-bouquet2}
     \z	
@@ -246,7 +242,7 @@ It has been observed that in British and Canadian English nouns such as \textit{
 
 \noindent The behavior of inanimate social collectives like the one in \REF{wan:ex:entailment-fleet}, which is on a par with \REF{wan:ex:entailment-committee} and contrasts with \REF{wan:ex:entailment-bouquet}, corroborates the validity of the test based on truth conditions of negated existential statements.
 
-	\ea\label{wan:ex:entailment-fleet}
+	\ea\judgewidth{$\nvDash$}\label{wan:ex:entailment-fleet}
 	\ea[]{Each truck from the fleet travels to a different state to deliver goods.}\label{wan:ex:entailment-fleet1}
 	\ex[$\nvDash$]{The fleet no longer exists.}\label{wan:ex:entailment-fleet2}
     \z
@@ -309,7 +305,7 @@ I will first illustrate the richness of the Slavic system on the basis of Polish
 
 Let us begin with derived spatial collectives. Though there are a number of differences between the three classes, what they all share are at least the following properties. First of all, the derived forms in each of the classes occur in addition to regular plurals. Though morphosyntactically they all exhibit singular agreement, they denote pluralities of objects denoted by the root. Furthermore, they all give rise to an inference that the plurality is relatively large. Finally, their referents are not just arbitrary collections of objects but rather they are conceptualized as aggregates, i.e., topological configurations of entities that either touch each other or remain in close proximity. 
 
-The first class concerns collectives derived by the suffix \textit{-e} (along with the allomorphs \textit{-owie} and \textit{-iwie}), which attaches to inanimate nouns. \tabref{wan:tab:listowie} gives four examples of a tripartite sequence consisting of a singular form, e.g., \textit{kwiat} `flower', a regular plural, e.g., \textit{kwiaty} `flowers', and a corresponding collective, e.g., \textit{kwiecie} `clump(s) of flowers'. All of the forms derived by \textit{-e} show singular neuter agreement, cannot be pluralized and are incompatible with cardinal numerals. They all denote clustered pluralities of relatively small objects. For instance, \textit{pierze} denotes a collection of feathers whereas \textit{listowie} and \textit{igliwie} designate leaf and needle foliage, respectively.
+The first class concerns collectives derived by the suffix \textit{-e} (along with the allomorphs \textit{-owie} and \textit{-iwie}), which attaches to inanimate nouns. \tabref{wan:tab:listowie} gives four examples of a tripartite sequence consisting of a singular form, e.g., \textit{kwiat} `flower', a regular plural, e.g., \textit{kwiaty} `flowers', and a corresponding collective, e.g., \textit{kwiecie} `clump(s) of flowers'. All of the forms derived by \textit{-e} show singular neuter agreement, cannot be pluralized and are incompatible with cardinal numerals. They all denote clustered pluralities of relatively small objects. For instance, \textit{pierze} denotes a collection of feathers whereas \textit{listowie} and \textit{igliwie} designate leaf and needle foliage, respectively.\largerpage[2]
 
 \begin{table}[h!]
 \caption{Polish spatial collectives derived by the suffix \textit{-e}} 
@@ -326,7 +322,7 @@ The first class concerns collectives derived by the suffix \textit{-e} (along wi
  \end{tabular}
 \end{table}
 
-The second class consists of spatial collectives derived by the suffix \textit{-ina} (with the allomorph \textit{-yna}). The collective expressions in \tabref{wan:tab:brzezina} are names of forests and as such refer to collections of trees of a given type that form a dense spatial configuration.\footnote{Collectives naming types of forests derived with a special affix are also attested outside Slavic, e.g., in Romanian \citep{henderson2017swarms}.} For instance, adding the suffix \textit{-ina} to \textit{brzoza} `birch' results in \textit{brzezina}, a noun denoting a birch wood or grove. Similarly, \textit{buczyna}, \textit{grabina} and \textit{olszyna} refer to a beech, hornbeam and alder forest, respectively. All of them are feminine countable nouns, which can pluralize and combine with cardinals.\footnote{Note, however, that the collective forms are homonymous with mass nouns designating a type of wood as a material, e.g., \textit{brzezina} can also mean `birch wood'.} 
+{\interfootnotelinepenalty=10000 The second class consists of spatial collectives derived by the suffix \textit{-ina} (with the allomorph \textit{-yna}). The collective expressions in \tabref{wan:tab:brzezina} are names of forests and as such refer to collections of trees of a given type that form a dense spatial configuration.\footnote{Collectives naming types of forests derived with a special affix are also attested outside Slavic, e.g., in Romanian \citep{henderson2017swarms}.} For instance, adding the suffix \textit{-ina} to \textit{brzoza} `birch' results in \textit{brzezina}, a noun denoting a birch wood or grove. Similarly, \textit{buczyna}, \textit{grabina} and \textit{olszyna} refer to a beech, hornbeam and alder forest, respectively. All of them are feminine countable nouns, which can pluralize and combine with cardinals.\footnote{Note, however, that the collective forms are homonymous with mass nouns designating a type of wood as a material, e.g., \textit{brzezina} can also mean `birch wood'.}}
 
 \begin{table}[h!]
 \caption{Polish spatial collectives derived by the suffix \textit{-ina}} 
@@ -362,7 +358,7 @@ Finally, the third class of spatial collectives includes names of spatial config
 
 To conclude, all of the collectives examined above denote collections conceptualized as topologically structured configurations constituted by a relatively large number of objects denoted by the nominal root.  
 
-\subsection{Derived social collective nouns}\label{wan:sec:derived-social-collective-nouns}
+\subsection{Derived social collective nouns}\label{wan:sec:derived-social-collective-nouns}\largerpage
 
 Let us now turn to derived social collectives. Here, I will discuss three classes of such expressions in Polish. Similarly to spatial collectives, there are some differences between the classes. However, they all have the following features in common. Firstly, social collectives appear in addition to regular plural forms. Despite being singular in terms of morphosyntax, they usually refer to pluralities of human individuals having the property denoted by the root. Crucially, nouns forming the types of collectives discussed in this section typically denote social roles and capacities associated with profession, social class and status. In addition to a collective inference, they also seem to have a generic component indicating that the group forms a sort of institution.  
 
@@ -383,7 +379,7 @@ The first class comprises collective nouns derived by the suffix \textit{-stwo} 
  \end{tabular}
 \end{table}
 
-The second class of social collectives consists of feminine uncountable nouns derived with the suffix \textit{-eria}. Again, the collectives in \tabref{wan:tab:magnateria} denote pluralities of human individuals that have a flavor of a social institution. Thus, \textit{magnateria} denotes aristocracy, \textit{żandarmeria} refers to the military police and \textit{masoneria} refers to the members of freemasonry. The noun \textit{chuliganeria} `collective of hooligans' is an example of an interesting subset of pejorative \textit{-eria} collectives denoting pluralities of individuals whose behavior is perceived as violating social order. 
+The second class of social collectives consists of feminine uncountable nouns derived with the suffix \textit{-eria}. Again, the collectives in \tabref{wan:tab:magnateria} denote pluralities of human individuals that have a flavor of a social institution. Thus, \textit{magnateria} denotes aristocracy, \textit{żandarmeria} refers to the military police and \textit{masoneria} refers to the members of freemasonry. The noun \textit{chuliganeria} `collective of hooligans' is an example of an interesting subset of pejorative \textit{-eria} collectives denoting pluralities of individuals whose behavior is perceived as violating social order.\largerpage
 
 \begin{table}[h!]
 \caption{Polish social collectives derived by the suffix \textit{-eria}} 
@@ -423,7 +419,8 @@ In each of the cases discussed above, the derived collective denotes a group of 
 
 The intuitions concerning the nature of the referents of spatial and social collectives are further corroborated by a number of linguistic tests. The first one concerns the compatibility with VPs headed by the verb \textit{należeć} `belong'. As evidenced by the contrast in \REF{wan:ex:belong}, PPs including social collectives are perfectly fine as complements of \textit{należeć}, see \REF{wan:ex:belong-social}, whereas PPs with spatial collectives are degraded, as in \REF{wan:ex:belong-spatial}.
 
-\ea\label{wan:ex:belong}
+
+\ea\judgewidth{\#}\label{wan:ex:belong}
 \ea[]{\gll Ten mężczyzna należy do duchowieństwa.\\  
      this man belongs to priest\textsc{.coll.gen}\\ % \hfill (Polish)
 \glt `This man belongs to the clergy.'}\label{wan:ex:belong-social}
@@ -435,7 +432,7 @@ The intuitions concerning the nature of the referents of spatial and social coll
 
 \noindent Moreover, the existence of social collections (unlike spatial collections) seems to be at least to some degree independent of their constituent members. The sentence in \REF{wan:ex:social-no} is fine since the social collective refers to an institutionalized entity, which does not necessarily cease to exist if there are temporarily no priests around. On the other hand, \REF{wan:ex:spatial-no} is strange on a reading where there is a clump with no flowers making it up. 
 
-\ea\label{wan:ex:no}
+\ea\judgewidth{\#}\label{wan:ex:no}
 \ea[]{\gll Obecnie nikt nie należy do duchowieństwa.\\  
      currently no.one \textsc{neg} belongs to priest\textsc{.coll.gen}\\ %\hfill (Polish)
 \glt `Currently, no one belongs to the clergy.'}\label{wan:ex:social-no}
@@ -447,7 +444,7 @@ The intuitions concerning the nature of the referents of spatial and social coll
 
 \noindent Furthermore, social collectives are compatible with kind predicates such as \textit{być powszechnym} `be widespread', see \REF{wan:ex:generic-social}. On the other hand, spatial collectives are not felicitous in such generic environments, see \REF{wan:ex:generic-spatial}.
 
-\ea\label{wan:ex:generic}
+\ea\judgewidth{\#}\label{wan:ex:generic}
 \ea[]{\gll Duchowieństwo było powszechne w XX wieku.\\
 priest\textsc{.coll} was widespread in 20th century\\ %\hfill (Polish)
 \glt `Clergy was widespread in the 20th century.'}\label{wan:ex:generic-social}
@@ -494,7 +491,9 @@ As already mentioned, Polish is not exceptional in having a rich inventory of co
 
 The properties of that class in individual languages may differ in certain regards. For instance, while Czech has a relatively large number of spatial collectives of the discussed type (\citealt{grimm_docekal-toappear-counting} list more than 20 examples), Polish has nowadays only 6 such nouns; though spatial collectives of the discussed type are typically singular and uncountable across Slavic, in Bosnian/Croatian/Montenegrin/Serbian (BCMS) and Slovenian they can pluralize (\citealt{ojeda_grivicic2005semantics,mitrovic2011count}) and so on. However, what all of the collective forms in \tabref{wan:tab:slavic-derived-spatial-collectives} have in common is that they denote collections of objects conceptualized as coherently related in terms of spatial proximity. For instance, Czech \textit{rákosí} does not denote an arbitrary plurality of reeds but rather a reed bed, Slovak \textit{kamenie} refers to a clump of rocks, Macedonian \textit{snopje} means `bundle of sheaves' and Slovenian \textit{grmovje} is probably best translated as `clump of bushes'.   
 
+\begin{sloppypar}
 Morphemes dedicated to the derivation of social collectives are also widespread across Slavic. \tabref{wan:tab:slavic-derived-social-collectives} provides six examples of equivalents of social collectives derived with the suffix \textit{-stwo}, recall \tabref{wan:tab:rycerstwo}, in other Slavic languages.
+\end{sloppypar}
 
 \begin{table}[h!]
 \caption{Slavic derived social collectives} 
@@ -513,13 +512,13 @@ Morphemes dedicated to the derivation of social collectives are also widespread 
  \end{tabular}
 \end{table}
 
-All of the collectives in \tabref{wan:tab:slavic-derived-social-collectives} denote groups of individuals performing socially salient institutionalized roles. Czech \textit{učitelstvo} and Slovak \textit{študentstvo} refer to a body of teachers and students, respectively. Russian \textit{voinstvo} denotes an army. BCMS \textit{radništvo} means `collective of workers'. Macedonian \textit{gra{\'{g}}anstvo} is probably best translated as `society' and Slovenian \textit{vodstvo} as `leadership'.
+All of the collectives in \tabref{wan:tab:slavic-derived-social-collectives} denote groups of individuals performing socially salient institutionalized roles. Czech \textit{učitelstvo} and Slovak \textit{študentstvo} refer to a body of teachers and students, respectively. Russian \textit{voinstvo} denotes an army. BCMS \textit{radništvo} means `collective of workers'. Macedonian \textit{gra{\'{g}}anstvo} is probably best translated as `society' and Slovenian \textit{vodstvo} as `leadership'.\largerpage
 
 Notice also that many of the collectivizing suffixes are polyfunctional. A frequent pattern is that the very same suffix, e.g., Polish \textit{-stwo} and BCMS \textit{-stvo}, is also employed to derive names of abstract properties associated with the root noun. For instance, the BCMS noun \textit{bratstvo} `brotherhood' is actually ambiguous between the collective `brotherhood as a group' and the property meaning `brotherhood as the quality of being brotherly'.\footnote{On the other hand, Czech distinguishes the two senses by using different suffixes, e.g., \textit{lidstvo} `humanity, the human race' as opposed to \textit{lidství} `humanity, human nature'.} This fact further suggests that at their core social collectives relate to certain abstract capacities.
 
 In this section, I have shown that collective noun derivations are widespread across Slavic and that their nature is highly systematic. To conclude, I propose the generalization in \REF{wan:ex:generalization}.
 
-\eanoraggedright \textsc{Generalization:} Slavic collective suffixes form a natural semantic class, which consists of two subclasses corresponding to the distinction between spatial and social collections.\label{wan:ex:generalization}
+\eanoraggedright\sloppy \textit{Generalization:} Slavic collective suffixes form a natural semantic class, which consists of two subclasses corresponding to the distinction between spatial and social collections.\label{wan:ex:generalization}
 \z
 
 \noindent In the next two sections, I will introduce a formal toolbox that will allow us for what I argue is the proper analysis of the two types of derived collectives in Slavic. For this purpose, I will combine two strands of research, specifically mereotopology and theory of roles.  
@@ -541,7 +540,7 @@ First of all, \citet{grimm2012number} argues that mass nouns that denote aggrega
 
 \noindent Furthermore, \citet{scontras2014semantics} demonstrates that atomizers such as \textit{grain} differ from measure terms and container nouns in that they lack a measure reading referencing a single quantity. Instead, they always individuate entities in terms of compact pieces of matter. Consequently, atomizers are acceptable with the distributive operator \textit{each} even in contexts where measure and container nouns are infelicitous, as witnessed by the contrast between \REF{wan:ex:atomizer} and \REF{wan:ex:measure-container}.
 
-\ea \ea[]{The two grains of rice in this soup cost 2 euros each.}\label{wan:ex:atomizer}
+\ea \judgewidth{\#}\ea[]{The two grains of rice in this soup cost 2 euros each.}\label{wan:ex:atomizer}
 \ex[\#]{The two \minsp{\{} liters / cups\} of wine in this soup cost 2 euros each. \\ \hfill \citep[61--62]{scontras2014semantics}}\label{wan:ex:measure-container}
 \z
 \z
@@ -612,20 +611,18 @@ On an intuitive level, roles are certain functions or capacities of individuals.
 
 First of all, certain predicates are sensitive to the distinction in question. For instance, consider the contrast in \REF{wan:ex:judge-man-earn} \citep[see also][]{szabo2003qualification}. Here, \textit{earns 3,000 euros} selects only for as-phrases whose complement is a role noun, thereby \REF{wan:ex:man-earn} is infelicitous. Notice also that \REF{wan:ex:judge-earn} does not convey any information on the total income Paul makes but only on the amount of money he earns for fulfilling this particular role.
 
-		\ea\label{wan:ex:judge-man-earn} \ea[]{Paul earns 3,000 euros as a judge.}\label{wan:ex:judge-earn}
+		\ea\judgewidth{\#}\label{wan:ex:judge-man-earn} \ea[]{Paul earns 3,000 euros as a judge.}\label{wan:ex:judge-earn}
 		\ex[\#]{Paul earns 3,000 euros as a man. \hfill \citep[439]{zobel2017sensitivity}}\label{wan:ex:man-earn}
 		\z
         \z
 
-\noindent Moreover, role nouns differ from class nouns with respect to certain entailment patterns, as demonstrated in \REF{wan:ex:man-hangman-strike}--\REF{wan:ex:judge-hangman-strike} \citep[see][]{landman1989groupsii}. While the truth of \REF{wan:ex:hangman-strike} is guaranteed by the truth of the premises, the conclusion in \REF{wan:ex:hangman-strike-role} is invalid. 
+\noindent Moreover, role nouns differ from class nouns with respect to certain entailment patterns, as demonstrated in (\ref{wan:ex:man-hangman-strike}--\ref{wan:ex:judge-hangman-strike}) \citep[see][]{landman1989groupsii}. While the truth of \REF{wan:ex:hangman-strike} is guaranteed by the truth of the premises, the conclusion in \REF{wan:ex:hangman-strike-role} is invalid. 
 		
-		\ea\label{wan:ex:man-hangman-strike} \ea[]{The man (over there) is on strike.}\label{wan:ex:man-strike}
+		\ea\judgewidth{$\vDash$}\label{wan:ex:man-hangman-strike} \ea[]{The man (over there) is on strike.}\label{wan:ex:man-strike}
 		\ex[]{The man (over there) is the hangman.}\label{wan:ex:man-hangman}
 		\ex[$\vDash$]{The hangman is on strike. \hfill \citep[439]{zobel2017sensitivity}}\label{wan:ex:hangman-strike}
 		\z
-		\z
-		
-		\ea\label{wan:ex:judge-hangman-strike} \ea[]{The judge is on strike.}\label{wan:ex:judge-strike}
+		\ex\label{wan:ex:judge-hangman-strike} \ea[]{The judge is on strike.}\label{wan:ex:judge-strike}
 		\ex[]{The judge is the hangman.}\label{wan:ex:judge-hangman}
 		\ex[$\nvDash$]{The hangman is on strike. \hfill \citep[724]{landman1989groupsii}}\label{wan:ex:hangman-strike-role}
 		\z
@@ -670,16 +667,16 @@ I follow \citet{zobel2017sensitivity} in assuming the primitive type $r$ for soc
 Importantly, though roles are distinct from individuals, the two ontological categories are closely associated with each other as individuals typically perform roles. This fact is captured by a special shifting operator \cnst{play}, which relates a role with individuals that perform it. As defined in \REF{wan:form:play}, \cnst{play} takes a set of roles $P$ and yields a set of (potentially plural) individuals $x$ for which there are a role $r$ and an eventuality $e$ such that $r$ is a $P$-role and $\langle r,e\rangle$ is part of the specific role structure $\mathscr{R}_x$ of $x$, which structures individuals' participation in eventualities relative to the roles they perform, see \REF{wan:form:role-structure} \citep[451]{zobel2017sensitivity}. 
 
 \ea[]{\sib{\cnst{play}}${ } =\lambda P_{\stb{r,t}} \lambda x_e \exists r_r \exists e_e[P(r) \wedge \langle r,e\rangle \in \mathscr{R}_x]$}\label{wan:form:play}
-\z
-
-\ea[]{For each individual $x$, the specific role structure $\mathscr{R}_x$ is a set of role-eventuality-pairs. A pair $\stb{r,e}$ is a member of $\mathscr{R}_x$ iff $x$ is a participant of $e$ in role $r$.}\label{wan:form:role-structure}
+\ex[]{For each individual $x$, the specific role structure $\mathscr{R}_x$ is a set of role-eventuality-pairs. A pair $\stb{r,e}$ is a member of $\mathscr{R}_x$ iff $x$ is a participant of $e$ in role $r$.}\label{wan:form:role-structure}
 \z
 
 \noindent With all the theoretical ingredients in place, let us move on to the proposal.
 
 \section{Collectives as clusters}\label{wan:sec:collectives-as-clusters}
 
+\begin{sloppypar}
 In this section, I propose a semantic analysis of Slavic derived collective nouns as properties of clusters. My proposal builds on the mereotopological treatment of aggregate nominals developed by \citet{grimm2012number} and \citet{grimm_docekal-toappear-counting} as well as \citeposst{zobel2017sensitivity} theory of roles. The main claim is that mereotopological relations hold not only between concrete objects occupying physical space but also between abstract entities such as roles in social space. This extension enables us to capture spatial collectives as predicates true of spatial clusters and social collectives as predicates true of social clusters, i.e., pluralities of abstract capacities conceptualized as being socially connected.
+\end{sloppypar}
 
 \subsection{Pluralities of roles}\label{wan:sect:pluralities-of-roles}
 
@@ -734,7 +731,7 @@ priest\textsc{.coll} \textsc{neg} received any\textsc{.gen} money\textsc{.gen} f
 
 \noindent Furthermore, arguments such as \REF{wan:ex:delegation-clergy-strike} have a reading on which they are invalid, similarly to \REF{wan:ex:judge-hangman-strike}. For instance, the conclusion in \REF{wan:ex:delegation-strike} does not necessarily follow from the premises in \REF{wan:ex:delegation-clergy} and \REF{wan:ex:clergy-strike} if the delegation is intended to represent interests of the local community rather than the official position of the church.
 
-\ea\label{wan:ex:delegation-clergy-strike}
+\ea\judgewidth{$\nvDash$}\label{wan:ex:delegation-clergy-strike}
 \ea[]{\gll Delegacja na szczyt klimatyczny składa się z lokalnego duchowieństwa.\\
 delegation on summit\textsc{.acc} climate\textsc{.adj} consists \textsc{refl} from local\textsc{.gen} priest\textsc{.coll.gen}\\
 \glt `The delegation to the climate summit consists of the local clergy.'}\label{wan:ex:delegation-clergy}
@@ -757,7 +754,7 @@ delegation on summit\textsc{.acc} climate\textsc{.adj} is.on.strike\\
 
 \noindent The proposed analysis has two important advantages. First of all, it captures the intuition that the two types of collective nouns are actually closely related since they both make use of the \cnst{clstr} operator. At the same time, it also explains the source of the differences between spatial and social collectives, as examined in \sectref{wan:sec:types-of-collectives} and \sectref{wan:sec:slavic-derived-collectives}. Specifically, the \cnst{clstr} operator accounts for collective inferences whereas different types of connection, i.e., \cnst{sp} and \cnst{sc}, correspond to the two distinct modes of collectivity discussed in \sectref{wan:sec:modes-of-collectivity}.
 
-The proposal captures the core properties of spatial and social collections in the following manner. The reason why spatial collections may cease to exist when the topological configuration of their constituent members is rearranged, as in \REF{wan:ex:entailment-committee}, is simply because the spatial connection relative to which the cluster is defined does not apply anymore, and thus there is no cluster anymore. On the other hand, the location of individuals who perform roles making up a social cluster is irrelevant, recall \REF{wan:ex:entailment-bouquet}--\REF{wan:ex:entailment-fleet}, because the cluster is not defined in spatial space, but rather in the abstract social space. In relation to this, the fact that social collections appear to exist independently of their constituent members, recall \REF{wan:ex:no}, stems straightforwardly from the different ontological status of social clusters (type $r$) as compared to individuals (type $e$). Consequently, there can be very few or even no individuals performing the relevant roles at a given moment, which also accounts for the contrast in \REF{wan:ex:plurality}--\REF{wan:ex:plurality-fleet}. Finally, the compatibility of certain predicates, e.g., the Polish verb \textit{należeć} `belong', only with social collectives, recall \REF{wan:ex:belong}, can be easily explained by postulating a selectional restriction requiring an expression of type $\stb{r,t}$.
+The proposal captures the core properties of spatial and social collections in the following manner. The reason why spatial collections may cease to exist when the topological configuration of their constituent members is rearranged, as in \REF{wan:ex:entailment-committee}, is simply because the spatial connection relative to which the cluster is defined does not apply anymore, and thus there is no cluster anymore. On the other hand, the location of individuals who perform roles making up a social cluster is irrelevant, recall (\ref{wan:ex:entailment-bouquet}--\ref{wan:ex:entailment-fleet}), because the cluster is not defined in spatial space, but rather in the abstract social space. In relation to this, the fact that social collections appear to exist independently of their constituent members, recall \REF{wan:ex:no}, stems straightforwardly from the different ontological status of social clusters (type $r$) as compared to individuals (type $e$). Consequently, there can be very few or even no individuals performing the relevant roles at a given moment, which also accounts for the contrast in (\ref{wan:ex:plurality}--\ref{wan:ex:plurality-fleet}). Finally, the compatibility of certain predicates, e.g., the Polish verb \textit{należeć} `belong', only with social collectives, recall \REF{wan:ex:belong}, can be easily explained by postulating a selectional restriction requiring an expression of type $\stb{r,t}$.
 
 \section{Conclusion}\label{wan:sec:conclusion}
 
